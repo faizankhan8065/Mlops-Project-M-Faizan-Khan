@@ -37,9 +37,8 @@ def main():
     y = df["price"]
 
     # ============================================================
-    # SCALING LINE  ->  Part 4: modify ONLY the next line on each
-    # feature branch so the two branches conflict on the same line.
-    X_processed = X  # baseline: no scaling
+  
+     X_processed = StandardScaler().fit_transform(X)  
     # ============================================================
 
     X_train, X_test, y_train, y_test = train_test_split(
