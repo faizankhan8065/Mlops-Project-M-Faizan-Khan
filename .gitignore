@@ -1,0 +1,24 @@
+# --- MLOps heavy assets (never commit raw data or model binaries) ---
+data/
+model/
+models/
+
+# Serialized model / weight files (belt-and-suspenders)
+*.pkl
+*.joblib
+*.h5
+
+# --- Python virtual environments ---
+venv/
+.venv/
+env/
+
+# --- Python cache / build ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# --- Editor / OS ---
+.vscode/
+.DS_Store
