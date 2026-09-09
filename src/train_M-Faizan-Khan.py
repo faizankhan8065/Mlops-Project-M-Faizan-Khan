@@ -38,7 +38,7 @@ def main():
 
     # ============================================================
   
-     X_processed = MinMaxScaler().fit_transform(X) 
+     X_processed = MinMaxScaler().fit_transform(X)
     # ============================================================
 
     X_train, X_test, y_train, y_test = train_test_split(
